@@ -1,0 +1,29 @@
+@extends('user-layout')
+
+@section('title', 'Home')
+
+@section('content')
+
+<h2 class="mb-3">{{ $header }}</h2>
+    <p class="lead text-muted">A catalogue of all things for your next A in class.</p>
+
+    <form method="GET" action="search.php" class="my-4">
+        <label class="form-label">Search a page or category</label>
+        <input type="text" name="search" class="form-control" placeholder="Search...">
+        <button type="submit" class="btn btn-primary mt-2">Search</button>
+    </form>
+
+    <hr class="my-5">
+
+    <h4 class="mb-3">...or browse our latest entries:</h4>
+    <ul class="list-group">
+            <li class="list-group-item">
+                    <a href="">
+                        Item
+                    </a>
+                    <br>
+                    <small class="text-muted">Description</small>
+            </li>
+    </ul>
+
+@endsection
