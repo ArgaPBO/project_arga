@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LatestEntries extends Controller
+class LatestEntriesController extends Controller
 {
     /**
      * Display a listing of the resource.
