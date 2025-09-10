@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h2 class="mb-3">{{ $header }}</h2>
+<h2 class="mb-3">A-Wiki</h2>
     <p class="lead text-muted">A catalogue of all things for your next A in class.</p>
 
     <form method="GET" action="search.php" class="my-4">
