@@ -17,13 +17,16 @@
 
     <h4 class="mb-3">...or browse our latest entries:</h4>
     <ul class="list-group">
+        @foreach ($entries as $entry)
             <li class="list-group-item">
                     <a href="">
-                        Item
+                        {{$entry->item}}
                     </a>
                     <br>
-                    <small class="text-muted">Description</small>
+                    <small class="text-muted">{{$entry->description}}</small>
             </li>
+        @endforeach
+            
     </ul>
 
 @endsection

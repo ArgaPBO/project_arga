@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\LatestEntry;
 use Illuminate\Http\Request;
 
 class LatestEntriesController extends Controller
@@ -12,7 +13,8 @@ class LatestEntriesController extends Controller
     public function index()
     {
         //
-        return view('home');
+        $latestEntries = LatestEntry::all();
+        return view('home', ["entries" => $latestEntries]);
     }
 
     /**
